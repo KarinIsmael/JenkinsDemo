@@ -4,7 +4,6 @@ pipeline{
         jdk 'JDK_11'
 
     }
-
     stages{
         stage('Build'){
             steps{
@@ -12,7 +11,6 @@ pipeline{
                 sh 'java --version'
                 //sh 'mvn --version'
                 sh 'mvn clean compile' //istället för ovan
-                KarinI
             }
         }
     }
