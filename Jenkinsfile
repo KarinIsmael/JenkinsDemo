@@ -8,9 +8,9 @@ pipeline{
         stage('Build'){
             steps{
                 echo 'Hello World'
-                sh 'java --version'
+                bat 'java --version'
                 //sh 'mvn --version'
-                sh 'mvn clean compile' //istället för ovan
+                bat 'mvn clean compile' //istället för ovan
             }
         }
     }
